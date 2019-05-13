@@ -16,6 +16,20 @@ char nasob_zlomky(int c1, int m1, int c2, int m2, int *c3, int *d3)
 		menovatel=m1*m2;
 	}
 	
+	if(citatel%menovatel==0)
+	{
+		citatel/=menovatel;
+		menovatel=1;
+	}
+	
+	for(i=1;i<m1;i++)
+	{
+		if(citatel%menovatel==i)
+		{
+			citatel/=i;
+			menovatel/=i;
+		}
+	}
 }
 
 main()
