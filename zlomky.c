@@ -15,8 +15,6 @@ char nasob_zlomky(int c1, int m1, int c2, int m2, int *c3, int *d3)
 	
 	c3=&citatel;
 	d3=&menovatel;
-	printf("%d %d\n",*c3,*d3);         // pre kontrolu
-	printf("%p %p\n",c3,d3);
 }
 
 main()
@@ -29,5 +27,5 @@ main()
 	printf("zadaj citalela a menovatela druheho zlomku: ");
 	scanf("%d %d",&c2,&m2);
 	
-	nasob_zlomky(c1,m1,c2,m2,&c3,&d3);
+	nasob_zlomky(c1,m1,c2,m2,c3,d3);
 }
