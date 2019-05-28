@@ -24,8 +24,8 @@ main()
 	printf("zadaj citalela a menovatela druheho zlomku: ");
 	scanf("%d %d",&c2,&m2);
 	
-	nasob_zlomky(c1,m1,c2,m2,&c3,&d3);
+	nasob_zlomky(c1,m1,c2,m2,c3,d3);
 	
-	printf("%d %d\n",c3,d3);
-	printf("%p %p",&c3,&d3);
+	printf("%d %d\n",*c3,*d3);
+	printf("%p %p",c3,d3);
 }
