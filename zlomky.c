@@ -12,6 +12,8 @@ char nasob_zlomky(int c1, int m1, int c2, int m2, int *c3, int *d3)
 	    
 	c3=c1*c2;
 	d3=m1*m2;
+	
+	return EXIT_SUCCESS;
 }
 
 main()
