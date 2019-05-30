@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include <limits.h>
 
 char nasob_zlomky(int c1, int m1, int c2, int m2, int *c3, int *d3)
 {
@@ -18,6 +17,9 @@ main()
 {
 	int c1,c2,m1,m2;
 	int *c3,*d3;
+	
+	c3=(int*)malloc(sizeof(int));
+	d3=(int*)malloc(sizeof(int));
 	
 	printf("zadaj citalela a menovatela prveho zlomku: ");
 	scanf("%d %d",&c1,&m1);
